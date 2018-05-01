@@ -19,10 +19,10 @@ $LANG['linkupdate'] = "<a href=\"index.php\">Update</a>";
 $LANG['linkregister'] = "<a href=\"create.php\">Register</a>";
 $LANG['email'] = "E-Mail";
 
-$LANG['error'] = "<img src='images/sign_error.png'> Fehler: ";
-$LANG['fatalerror'] = "<img src='images/sign_error.png'> System Fehler: ";
-$LANG['warning'] = "<img src='images/sign_warning.png'> Warnung: ";
-$LANG['success'] = "<img src='images/sign_tick.png'> Erfolgreich: ";
+$LANG['error'] = "<img src='images/sign_error.svg'> Fehler: ";
+$LANG['fatalerror'] = "<img src='images/sign_error.svg'> System Fehler: ";
+$LANG['warning'] = "<img src='images/sign_warning.svg'> Warnung: ";
+$LANG['success'] = "<img src='images/sign_tick.svg'> Erfolgreich: ";
 
 $LANG['databaseconnect'] = "Datenbankverbindung fehlerhaft.";
 $LANG['databaseerror'] = "Datenbank antwortet nicht, bitte sp&auml;ter versuchen.";

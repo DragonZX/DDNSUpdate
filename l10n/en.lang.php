@@ -13,10 +13,10 @@ $LANG['showinfo'] = "show info";
 $LANG['hideinfo'] = "hide info";
 $LANG['email'] = "eMail";
 
-$LANG['error'] = "<img src='images/sign_error.png'> Error: ";
-$LANG['fatalerror'] = "<img src='images/sign_error.png'> Fatal Error: ";
-$LANG['warning'] = "<img src='images/sign_warning.png'> Warning: ";
-$LANG['success'] = "<img src='images/sign_tick.png'> Success: ";
+$LANG['error'] = "<img src='images/sign_error.svg'> Error: ";
+$LANG['fatalerror'] = "<img src='images/sign_error.svg'> Fatal Error: ";
+$LANG['warning'] = "<img src='images/sign_warning.svg'> Warning: ";
+$LANG['success'] = "<img src='images/sign_tick.svg'> Success: ";
 
 $LANG['databaseconnect'] = "Database connection error.";
 $LANG['databaseerror'] = "Database not responding, try again later.";

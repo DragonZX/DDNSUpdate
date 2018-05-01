@@ -3,7 +3,7 @@ error_reporting(E_ERROR | E_WARNING);
 /******
  *
  *	DDNS Update Utility
- *	Developped by Arthur Mayer, a.mayer@citex.net
+ *	Developed by Arthur Mayer, a.mayer@citex.net
  *	Released under LGPL, Apache and BSD licenses (use the one you want)
  *
 ******/

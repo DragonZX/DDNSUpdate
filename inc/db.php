@@ -3,7 +3,7 @@
 # Database connection.
 $db_host = "localhost";
 $db_user = "ddns";
-$db_pass = "mysecretpass";
+$db_pass = "12345678";
 $db_database = "ddns";
 
 $db = @new mysqli($db_host,$db_user,$db_pass,$db_database);
