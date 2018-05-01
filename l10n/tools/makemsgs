@@ -1,0 +1,18 @@
+#!/bin/sh
+set -e
+
+i18N_DIR=$(readlink -f ../)
+
+if [ ! -d ${i18N_DIR}/po ]; then
+	echo "You must run this script from the l10n/tools directory."
+	exit 1
+fi
+
+FRONTEND_ROOT_DIR=$(readlink -f ../..)
+
+# PHP files
+find ${FRONTEND_ROOT_DIR} -type f \( -name '*.php' -o -name '*.phtml' -o -name '*.tpl' \) -print > php.lst
+xgettext --copyright-holder='Arthur Mayer' --package-name='DDNS' \
+--package-version="0.1.x" --msgid-bugs-address='info@aunited.ru' --language=PHP --keyword='tr' --keyword='ntr:1,2' \
+--from-code=utf-8 --files-from=php.lst --no-location --sort-output --output=${i18N_DIR}/DDNS.pot
+rm -f php.lst
