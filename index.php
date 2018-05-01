@@ -15,8 +15,6 @@ require_once("inc/config.php");
 require_once("inc/db.php");
 require_once("inc/templates.php");
 
-$hostname= $_SERVER['HTTP_HOST'];
-if (!$hostname) $hostname = $conf['hostname'];
 $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2); # get browsers language
 if(in_array($lang,$conf['lang'])) { # if translation for browsers language is there, use it
 	include("l10n/".$lang.".lang.php");
@@ -55,7 +53,7 @@ else {
 # site beginns
 echo '<?xml version="1.0" encoding="UTF-8"?>';
 
-include("html/header.html");
+include("html/header.php");
 
 $site = $_GET['site'];
 if (!isset($site))
