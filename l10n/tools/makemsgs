@@ -11,7 +11,7 @@ fi
 FRONTEND_ROOT_DIR=$(readlink -f ../..)
 
 # PHP files
-find ${FRONTEND_ROOT_DIR} -type f \( -name '*.php' -o -name '*.phtml' -o -name '*.tpl' \) -print > php.lst
+find ${FRONTEND_ROOT_DIR} -type f \( -name '*.php' -o -name '*.phtml' -o -name '*.tpl'  -o -name '*.js' \) -print > php.lst
 xgettext --copyright-holder='Arthur Mayer' --package-name='DDNS' \
 --package-version="0.1.x" --msgid-bugs-address='info@aunited.ru' --language=PHP --keyword='tr' --keyword='ntr:1,2' \
 --from-code=utf-8 --files-from=php.lst --no-location --sort-output --output=${i18N_DIR}/DDNS.pot
